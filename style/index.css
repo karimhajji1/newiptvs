@@ -224,6 +224,7 @@ nav
 .title_header p
 {
     color: rgba(255, 255, 255, 0.732);
+    color: #fdfdfd;
     line-height: 150%;
     width: 60%;
 }
