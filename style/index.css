@@ -204,7 +204,7 @@ nav
     height: 300px;
     z-index: -1;
     padding-top: 27%;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 .title_header h1
 {
@@ -532,7 +532,7 @@ nav
     /* text-align: center; */
     margin-bottom: 20px;
     color: #434343;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     
   }
   .partoneTwo button
