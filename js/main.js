@@ -114,4 +114,5 @@ function greet() {
   body.style.overflow = "visible";
 }
 
-setTimeout(greet, 2000);
+
+setTimeout(greet, 3000);
