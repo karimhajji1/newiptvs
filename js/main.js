@@ -26,10 +26,10 @@ let comnt2 = "Overall, this IPTV website has exceeded my expectations. It offers
 let comnt3 = "The user-friendly interface of this IPTV website makes it a breeze to navigate through the extensive content library. Finding my favorite shows and movies is quick and effortless."
 function fadeOut() {
   const circle = document.querySelector('.circle');
-  circle.style.opacity = 0; // set opacity to 0 to start the fade out animation
+  circle.style.opacity = 0; 
   setTimeout(() => {
-    circle.style.display = 'none'; // hide the element after the animation completes
-  }, 1000); // wait 1 second (1000 milliseconds) for the animation to complete
+    circle.style.display = 'none'; 
+  }, 1000); 
 }
 let coment = document.getElementsByClassName("coment")[0]
 let nameComntes = document.getElementsByClassName("nameComntes")[0]
@@ -80,11 +80,11 @@ scrollLinks.forEach(function(link) {
     targetDiv.scrollIntoView({ behavior: 'smooth' });
   });
 });
-// Add this code to your JavaScript file or script tag
 
-// Listen for the DOMContentLoaded event
+
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Scroll to the top of the page with smooth scrolling
+
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
@@ -96,12 +96,14 @@ const images = ["imgs/feature-item.webp", "imgs/headerOp.webp"];
  i = 0;
 
 function sayHello() {
-  backgrounds.style.animationName = "fadeAnimation"; // Trigger the fade animation
-
-  setTimeout(() => {
-    backgrounds.style.backgroundImage = `url('${images[i]}')`; // Set the new image
-    i = (i + 1) % images.length;
-  }, 700); // Wait for the fade out transition to complete (0.5 seconds)
+  
+    backgrounds.style.backgroundImage = `url('${images[i]}')`; 
+    if(i == 0)
+      i++
+    else if(i == 1)
+      i = 0;    
+    
+  
 }
 
 setInterval(sayHello, 3000);
@@ -112,5 +114,4 @@ function greet() {
   body.style.overflow = "visible";
 }
 
-// Call the greet() function after a delay of 2000 milliseconds (2 seconds)
 setTimeout(greet, 2000);
